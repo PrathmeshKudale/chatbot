@@ -6,72 +6,90 @@
     <title>Resume - Ayan Nurmahammad Sayyad</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 40px;
             background-color: #fff;
         }
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
         .header {
             text-align: center;
-            border-bottom: 2px solid #2c3e50;
+            border-bottom: 3px solid #2c3e50;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
-        .header h1 {
-            margin: 0;
-            color: #2c3e50;
-            font-size: 36px;
-            text-transform: uppercase;
-        }
         .contact-info {
             margin-top: 10px;
-            font-size: 14px;
-        }
-        .section {
-            margin-bottom: 25px;
+            font-size: 15px;
+            color: #555;
         }
         .section-title {
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 700;
             color: #2c3e50;
             text-transform: uppercase;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            border-bottom: 2px solid #eee;
+            margin-top: 30px;
             margin-bottom: 15px;
+            padding-bottom: 5px;
         }
         .entry {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .entry-header {
             display: flex;
             justify-content: space-between;
-            font-weight: bold;
+            align-items: baseline;
         }
-        .entry-subheader {
+        .entry-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000;
+        }
+        .entry-date {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .entry-subtitle {
             font-style: italic;
             color: #666;
             margin-bottom: 5px;
         }
         ul {
-            margin-top: 5px;
+            margin: 5px 0;
             padding-left: 20px;
         }
         li {
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
-        .skills-list, .hobbies-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .tag {
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            border-radius: 4px;
+        .marks-table {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 10px;
+            border-collapse: collapse;
             font-size: 14px;
+        }
+        .marks-table th, .marks-table td {
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            text-align: left;
+        }
+        .marks-table th {
+            background-color: #f9f9f9;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
     </style>
 </head>
@@ -79,58 +97,85 @@
 
     <div class="header">
         <h1>Ayan Nurmahammad Sayyad</h1> <div class="contact-info">
-            📍 Jejuri, India, Dist. Pune | 
-            📞 +91 84212 68329 | 
-            📧 ayansayyad39@gmail.com </div>
+            📧 ayansayyad39@gmail.com | 📞 +91 84212 68329 <br>
+            📍 At Post Jejuri, Tal. Purandar, Dist. Pune, Maharashtra, India </div>
     </div>
 
-    <div class="section">
-        <div class="section-title">Experience</div>
-        <div class="entry">
-            <div class="entry-header">
-                <span>Intern - Mechanical Maintenance Department</span> <span>Jun 2025 – Aug 2025</span> </div>
-            <div class="entry-subheader">Kirloskar Ferrous Industries Limited, Jejuri </div>
+    <div class="section-title">Experience</div>
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Intern - Mechanical Maintenance Department</span> <span class="entry-date">Jun 2025 – Aug 2025</span> </div>
+        <div class="entry-subtitle">Kirloskar Ferrous Industries Limited, Jejuri, Pune</div> <ul>
+            <li>Completed internship training in the Mechanical Maintenance department. </li>
+            <li>Assisted in routine maintenance, troubleshooting, and repair of industrial machinery. </li>
+            <li>Gained hands-on experience in a large-scale ferrous manufacturing environment. </li>
+            <li><strong>Recognition:</strong> Recognized by the DGM (Employee Relations) for being sincere and hardworking. </li>
+        </ul>
+    </div>
+
+    <div class="section-title">Education</div>
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Diploma in Mechanical Engineering</span> <span class="entry-date">2023 – 2026 (Expected)</span> </div>
+        <div class="entry-subtitle">Sharad Chandra Pawar Institute of Technology, Someshwar Nagar, Baramati</div> <ul>
+            <li><strong>Aggregate (5 Semesters):</strong> 65.85% </li>
+        </ul>
+        
+        <table class="marks-table">
+            <tr>
+                <th>Semester</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>1st Semester</td>
+                <td>68.47%</td> </tr>
+            <tr>
+                <td>2nd Semester</td>
+                <td>56.56%</td> </tr>
+            <tr>
+                <td>3rd Semester</td>
+                <td>68.89%</td> </tr>
+            <tr>
+                <td>4th Semester</td>
+                <td>65.22%</td> </tr>
+            <tr>
+                <td>5th Semester</td>
+                <td>70.12%</td> </tr>
+        </table>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">S.S.C. (10th Standard)</span> <span class="entry-date">2022 – 2023</span> </div>
+        <div class="entry-subtitle">Jijamata High School, Jejuri (Maharashtra Board)</div> <ul>
+            <li><strong>Percentage:</strong> 79.20% </li>
+        </ul>
+    </div>
+
+    <div class="section-title">Skills & Languages</div>
+    <div class="skills-grid">
+        <div>
+            <strong>Languages:</strong> <ul>
+                <li>Marathi </li>
+                <li>Hindi </li>
+                <li>English </li>
+            </ul>
+        </div>
+        <div>
+            <strong>Core Competencies:</strong>
             <ul>
-                <li>Completed internship training focused on Mechanical Maintenance. </li>
-                <li>Assisted in routine maintenance, troubleshooting, and repair of industrial machinery. </li>
-                <li>Gained hands-on experience in a large-scale ferrous manufacturing environment. </li>
-                <li>Recognized by the DGM (Employee Relations) for sincerity and hard work. </li>
+                <li>Industrial Machinery Maintenance </li>
+                <li>Troubleshooting & Repair </li>
+                <li>Manufacturing Operations </li>
             </ul>
         </div>
     </div>
 
-    <div class="section">
-        <div class="section-title">Education</div>
-        <div class="entry">
-            <div class="entry-header">
-                <span>Diploma in Mechanical Engineering</span> <span>2023 – 2026 (Expected)</span> </div>
-            <div class="entry-subheader">Sharad Chandra Pawar Institute of Technology, Baramati </div>
-            <ul>
-                <li>Aggregate Percentage (5 Semesters): <strong>65.85%</strong> </li>
-                <li>Latest Performance (5th Sem): <strong>70.12%</strong> </li>
-            </ul>
-        </div>
-        <div class="entry">
-            <div class="entry-header">
-                <span>S.S.C. (10th Standard)</span> <span>2022 – 2023</span> </div>
-            <div class="entry-subheader">Jijamata High School, Jejuri (Maharashtra Board) </div>
-            <ul>
-                <li>Percentage: <strong>79.20%</strong> </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Key Skills</div>
-        <div class="skills-list">
-            <span class="tag">Mechanical Maintenance</span> <span class="tag">Troubleshooting & Repair</span> <span class="tag">Industrial Safety</span> <span class="tag">Marathi</span> <span class="tag">Hindi</span> <span class="tag">English</span> </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Hobbies</div>
-        <div class="hobbies-list">
-            <span class="tag">Cricket</span> <span class="tag">Chess</span> <span class="tag">Gaming</span> </div>
-    </div>
+    <div class="section-title">Hobbies & Interests</div> <ul>
+        <li>Playing Cricket </li>
+        <li>Chess </li>
+        <li>Gaming </li>
+    </ul>
 
 </body>
 </html>
